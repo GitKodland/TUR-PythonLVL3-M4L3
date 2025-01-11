@@ -19,7 +19,7 @@ class Game:
         if self.info_message:
 
             for team in self.teams:
-                message_text += f"```Team {self.teams.index(team) + 1}\n"
+                message_text += f"```Takım {self.teams.index(team) + 1}\n"
                 team = sorted(list(team.values()), key=lambda player: player.score)
 
                 for player_number in range(len(team)):
@@ -28,7 +28,7 @@ class Game:
 
                 message_text += "```"
 
-            message_text += "\nSelect your team:"
+            message_text += "\nTakımınızı seçin:"
             await self.info_message.edit(content=message_text)
 
 
@@ -61,7 +61,7 @@ class Player:
             if self.questions[0]:
 
                 if self.questions[0][0][1].lower() == answer.lower():
-                    await self.user.send("Correct", delete_after=delete_delay)
+                    await self.user.send("Doğru", delete_after=delete_delay)
                     self.score += 10 * (4 - len(self.questions))
                     self.questions[0].pop(0)
                     self.opened_parts.append(self.hidden_parts[0].pop(0))
@@ -69,32 +69,32 @@ class Player:
                         self.hidden_parts.pop(0)
 
                 else:
-                    await self.user.send("Incorrect", delete_after=delete_delay)
+                    await self.user.send("Yanlış", delete_after=delete_delay)
 
                 if not self.questions[0]:
-                    await self.update_info_message("Reassemble phrases from accumulated fragments")
+                    await self.update_info_message("Biriktirilen parçalardan cümleleri yeniden birleştirin.")
 
             else:
                 if self.hidden_words[0].lower() == answer.lower():
                     self.opened_words.append(self.hidden_words.pop(0))
                     self.questions.pop(0)
                     self.opened_parts.clear()
-                    await self.user.send("Correct", delete_after=delete_delay)
+                    await self.user.send("Doğru", delete_after=delete_delay)
                     self.score += 50 * len(self.opened_words)
                 else:
-                    await self.user.send("Incorrect", delete_after=delete_delay)
+                    await self.user.send("Yanlış", delete_after=delete_delay)
 
             if self.questions[0]:
                 await self.update_info_message(self.questions[0][0][0])
 
         else:
-            await self.update_info_message("You've completed the game!", buttons=False)
+            await self.update_info_message("Oyunu tamamladınız!", buttons=False)
 
     async def update_info_message(self, text="", buttons=True):
         view = GetAnswerView(self) if buttons else None
-        info = (f"Your score: {self.score}\n"
-                f"Fragments found: {' '.join(self.opened_parts)}\n"
-                f"Words discovered: {' '.join(self.opened_words)}\n")
+        info = (f"Puanınız: {self.score}\n"
+                f"Bulunan parçalar: {' '.join(self.opened_parts)}\n"
+                f"Keşfedilen kelimeler: {' '.join(self.opened_words)}\n")
 
         await self.info_message.edit(content=info + text, view=view)
         await self.game.update_info_message()
