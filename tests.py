@@ -15,7 +15,7 @@ def check_answer(player: Player, answer):
                 print("incorrect")
 
             if not player.questions[0]:
-                print("Assemble text from accumulated fragments")
+                print("Biriktirilen parçalardan metni birleştirin")
 
         else:
             if player.hidden_words[0].lower() == answer.lower():
