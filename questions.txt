@@ -1,51 +1,51 @@
-What is the capital of Samoa?
+Samoa'nın başkenti nedir?
 Apia
 
-How many total continents are there in the Database?
+Veri tabanında toplam kaç kıta vardır?
 6
 
-What is the name of the column that is responsible for the area?
+Alanı temsil eden sütunun adı nedir?
 area
 
-Which key value links the countries table with the information about them?
+Ülkeler tablosu ile onlar hakkındaki bilgileri birbirine bağlayan anahtar değer nedir?
 country_id
 
-Find the smallest country by area
-Vatican City
+Alanı en küçük olan ülkeyi bulun.
+Vatikan
 
 ---
 
-Which country has the highest population density?
-Monaco
+Hangi ülke en yüksek nüfus yoğunluğuna sahiptir?
+Monako
 
-On which continent is the country with the capital Basseterre located?
-North America
+Başkenti Basseterre olan ülke hangi kıtada yer alır?
+Kuzey Amerika
 
-How many countries are there in Africa?
+Afrika'da kaç ülke vardır?
 53
 
-What is the capital of a country with a population of 1500001?
+Nüfusu 1.500.001 olan ülkenin başkenti nedir?
 Manama
 
-Which country is the most densely populated among countries with a population of more than 10 million and an area of less than 8 million square kilometers?
-Bangladesh
+Nüfusu 10 milyondan fazla ve alanı 8 milyon kilometrekareden az olan ülkeler arasında en yoğun nüfuslu ülke hangisidir?
+Bangladeş
 
-How many countries have capitals that begin with the letter B?
+Başkenti B harfi ile başlayan kaç ülke vardır?
 25
 
 ---
 
-Which continent has the smallest average population density?
-South America
+Hangi kıta en düşük ortalama nüfus yoğunluğuna sahiptir?
+Güney Amerika
 
-What is the total area of all countries in Australia and Oceania?
+Avustralya ve Okyanusya'daki tüm ülkelerin toplam alanı nedir?
 8490640.4
 
-In the info table, there are several countries the percentage of population of which, in relation to the Earth's population, is zero. Determine which one of these countries has the longest capital city name, and enter this country's population in the answer.
+Bilgi tablosunda, Dünya nüfusuna oranla nüfus yüzdesi sıfır olan birkaç ülke var. Bu ülkelerden başkent ismi en uzun olan ülkeyi belirleyin ve bu ülkenin nüfusunu cevap olarak girin.
 81588
 
-Which country has its name ending in 'ia', is located in Oceania, and has the smallest population in the?
-Микронезия
+İsmi 'ya' ile biten, Okyanusya'da bulunan ve en küçük nüfusa sahip olan ülke hangisidir?
+Mikronezya
 
-Determine the average population of the first 10 countries in Europe, that sorted by population density (in ascending order). Enter the integer as your answer.
+Nüfus yoğunluğuna göre (artan sırada) sıralanmış Avrupa'daki ilk 10 ülkenin ortalama nüfusunu belirleyin. Cevap olarak tam sayıyı girin.
 17045185
