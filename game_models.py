@@ -39,7 +39,7 @@ class Player:
         self.user = user
         self.game = game
         self.info_message = info_message
-        self.hidden_parts = ["sı kı lan pan da".split(), "ba lon la u çup".split(), "ku tu ba git miş".split()]
+        self.hidden_parts = ["kı sı pan lan da".split(), "lon ba çup la u".split(), "git ku ba miş tu".split()]
         self.opened_parts = []
         self.hidden_words = ["sıkılan panda", "balonla uçup", "kutuba gitmiş"]
         self.opened_words = []
