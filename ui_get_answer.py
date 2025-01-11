@@ -7,7 +7,7 @@ from discord.ui import Button, View, Modal, TextInput
 class GetAnswerModal(Modal):
     answer = TextInput(label='')
     def __init__(self, player):
-        super().__init__(title='Please enter the answer')
+        super().__init__(title='Lütfen cevabı girin')
         self.player = player
 
     async def on_submit(self, interaction: Interaction):
@@ -20,7 +20,7 @@ class GetAnswerModal(Modal):
 class GetAnswerButton(Button):
 
     def __init__(self):
-        super().__init__(label="Send the answer")
+        super().__init__(label="Cevabı gönder")
 
     async def callback(self, interaction: Interaction) -> Any:
         await interaction.response.send_modal(GetAnswerModal(player=self.view.player))
