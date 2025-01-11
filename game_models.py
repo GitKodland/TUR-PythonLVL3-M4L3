@@ -39,9 +39,9 @@ class Player:
         self.user = user
         self.game = game
         self.info_message = info_message
-        self.hidden_parts = ["wiz tripped a ard on".split(), "cast and robe a and spell".split(), "soup turned into self him to".split()]
+        self.hidden_parts = ["sı kı lan pan da".split(), "ba lon la u çup".split(), "ku tu ba git miş".split()]
         self.opened_parts = []
-        self.hidden_words = ["a wizard tripped on", "robe cast a spell and", "turned him self into soup"]
+        self.hidden_words = ["sıkılan panda", "balonla uçup", "kutuba gitmiş"]
         self.opened_words = []
         self.team_number = team_number
 
